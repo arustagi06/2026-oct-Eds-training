@@ -18,7 +18,8 @@
 }
 
 .custom-cards > div:hover {
-  transform: translateY(-8px);
+  /* transform: translateY(-8px); */
+  background: #0b5ed7;
   box-shadow: 0 20px 40px rgb(0 0 0 / 15%);
 }
 
@@ -66,6 +67,15 @@
   line-height: 1.6;
   color: #666;
   margin: 0;
+}
+.custom-cards > div:hover {
+  background: #0b5ed7;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 15%);
+}
+
+.custom-cards > div:hover h2,
+.custom-cards > div:hover p {
+  color: #fff;
 }
 
 /* Tablet */

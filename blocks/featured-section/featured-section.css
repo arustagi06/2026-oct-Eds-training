@@ -1,0 +1,148 @@
+.featured-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.featured-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.featured-subtitle {
+  color: #0b5ed7;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.featured-text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #111;
+}
+
+.featured-description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.featured-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.featured-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.featured-features li::before {
+  content: '✓';
+  position: static; /* important */
+  left: 0;
+  color: #00a651;
+  font-weight: 700;
+}
+
+.featured-btn {
+  display: inline-block;
+  background: #0b5ed7;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .featured-section-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .featured-text h2 {
+    font-size: 34px;
+  }
+}
+.featured-btn,
+.featured-btn:visited {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.featured-btn:hover {
+  color: #fff !important;
+}
+.featured-section-content {
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+}
+.featured-image {
+  position: relative;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -20px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #0b5ed7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+}
+
+.experience-badge span {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.experience-badge p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #fff;
+}
+.featured-text h2 {
+  max-width: 550px;
+  font-size: 58px;
+  line-height: 1.15;
+}
+.featured-btn,
+.featured-btn:link,
+.featured-btn:visited {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.featured-btn:hover,
+.featured-btn:focus,
+.featured-btn:active {
+  color: #fff !important;
+  text-decoration: none !important;
+  background: #0e48d4;
+}
