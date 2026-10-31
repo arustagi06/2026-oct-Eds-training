@@ -243,7 +243,7 @@
   text-align: center;
 }
 .form-submit .btn {
-  background-color: #cf2230;
+  background-color: #165dff;
   padding: 0.52083vw 1.5625vw;
   color: #fff;
   font-size: 14px;
@@ -630,7 +630,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   width: auto !important;
   min-width: 220px;
   padding: 14px 36px;
-  background: #dc1e32;
+  background: #165dff;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -642,7 +642,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
 
 /* Hover effect */
 .form-wrapper button[type='submit']:hover {
-  background: #b81729;
+  background: #0e48d4;
+}
+.form.block button[type='submit']:hover,
+.form.block button[type='submit']:focus,
+.form.block button[type='submit']:active {
+  background: #0e48d4 !important;
+  color: #fff !important;
+  transition: all 0.1s ease;
 }
 /* Center the complete form */
 .form.block form {
@@ -682,7 +689,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   margin: 0 auto;
   display: inline-block;
   padding: 12px 32px;
-  background: #cf2230;
+  background: #165dff;
   border: none;
   border-radius: 6px;
   color: white;

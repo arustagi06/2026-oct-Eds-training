@@ -15,7 +15,7 @@
 }
 
 .pricing-card:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   box-shadow: 0 12px 40px rgb(0 0 0 / 12%);
 }
 
