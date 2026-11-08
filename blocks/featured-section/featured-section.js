@@ -38,13 +38,5 @@ export default function decorate(block) {
 
   wrapper.append(image, content);
   block.append(wrapper);
-  image.insertAdjacentHTML(
-    'beforeend',
-    `
-  <div class="experience-badge">
-    <span>15+</span>
-    <p>Years Experience</p>
-  </div>
-`,
-  );
+  image.insertAdjacentHTML('beforeend');
 }
