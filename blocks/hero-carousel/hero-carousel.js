@@ -9,6 +9,7 @@ export default function decorate(block) {
     btn1Link: row.children[4]?.textContent.trim() || '#',
     btn2Text: row.children[5]?.textContent.trim() || '',
     btn2Link: row.children[6]?.textContent.trim() || '#',
+    socials: row.children[7]?.textContent.trim() || '',
   }));
 
   block.innerHTML = '';
@@ -43,6 +44,9 @@ export default function decorate(block) {
           ${slide.btn2Text}
         </a>
       </div>
+      <div class="hero-socials">
+   ${renderSocials(slide.socials)}
+</div>
     </div>
   `;
 
@@ -87,5 +91,27 @@ export default function decorate(block) {
       current = (current + 1) % slideEls.length;
       showSlide(current);
     }, 5000);
+  }
+  function renderSocials(socials) {
+    if (!socials) return '';
+
+    return socials
+      .split('|')
+      .map((item) => {
+        const [platform, url] = item.split(':');
+        const icons = {
+          linkedin: 'in',
+          facebook: 'f',
+          twitter: 'X',
+          instagram: '◎',
+        };
+
+        return `
+  <a href="${url}" target="_blank" class="social-icon">
+    ${icons[platform.toLowerCase()] || '?'}
+  </a>
+`;
+      })
+      .join('');
   }
 }
