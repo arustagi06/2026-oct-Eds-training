@@ -50,7 +50,7 @@ export default function decorate(block) {
           <img src="https://main--2026-oct-eds-training--arustagi06.aem.page/assets/images/technowp-slider.jpg" alt="">
           <div>
             <p>Always Look At The Solution</p>
-            <span>October 18, 2022</span>
+            <span>October 18, 2026</span>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function decorate(block) {
           <img src="https://main--2026-oct-eds-training--arustagi06.aem.page/assets/images/technowp-slider.jpg" alt="">
           <div>
             <p>7 Secrets About Nonprofit</p>
-            <span>October 18, 2022</span>
+            <span>October 18, 2026</span>
           </div>
         </div>
       </div>
