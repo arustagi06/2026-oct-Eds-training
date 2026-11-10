@@ -65,7 +65,7 @@ export default function decorate(block) {
     </div>
 
     <div class="footer-bottom">
-      TechnoWP © 2025 - Designed by Wpdream
+      TechnoWP © 2026 - Designed by Wpdream
     </div>
   `;
 }
